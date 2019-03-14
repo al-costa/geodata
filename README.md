@@ -1,6 +1,12 @@
 # GEODATA: Desafio técnico para engenheiro de dados
 *Autor:* André Costa (2019-03-11)
 
+#### Notas da versão:
+
+- Especificação do esquema de dados do warehouse agora inclui partições do Hive
+- Alterado o nome do script que gera a dimensão CALENDARIO de *generate-data-dimension* para *generate calendario-dimension*
+- Adaptação dos scripts *generate-calendario-dimension*, *ETL-concorrente-dimension* e *ETL-fluxo-fact*, para suportar o uso de partições
+
 ## INSTRUÇÕES
 
 1. Execute o script *run_docker_container.sh* para obter a imagem e gerar o container corretamente
@@ -19,7 +25,7 @@
   
        1. abra o notebook *create-warehouse-schema*, e execute todos os passos
   
-       2. abra o notebook *generate-data-dimension*, e execute todos os passos
+       2. abra o notebook *generate-celendario-dimension*, e execute todos os passos
   
        3. abra o notebook *ETL-concorrente-dimension*, e execute todos os passos
   
